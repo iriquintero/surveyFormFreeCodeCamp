@@ -1,0 +1,190 @@
+/*font-family: 'Hind Siliguri', sans-serif;*/
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background:url(arepas.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size:16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+.card{
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(250,180,3,1) 0%, rgba(250,180,3,0.84) 23%, rgba(4,60,227,0.68) 47%, rgba(5,29,250,0.57) 63%, rgba(247,0,0,0.41) 85%, rgba(252,3,3,0.31) 100%);
+    margin:10% 20%;
+    border-radius:10px;
+    padding: 20px;
+}
+/*header*/
+.text-center{
+     text-align: center;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 0.5;
+    color:white;
+    margin:25px auto 15px auto;
+}
+#description{
+    margin:0 auto;
+    font-size: 1.2rem;
+    padding: 0 5px;
+}
+
+/*form*/
+label{
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+    color:white;
+    font-size:1.5rem;
+    margin-top:15px;
+}
+#survey-form{
+    padding:16px;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    border:1px solid #ededed;
+    height: 2rem;
+    background-color:white;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus{
+    border:1px solid rgba(250,180,3);
+}
+input, select, textarea{
+    margin:0;
+    font-family: Verdana, sans-serif;
+    font-size: inherit;
+    line-height: inherit;
+    color:grey;
+    border-radius: 5px;
+    box-sizing:border-box;
+}
+p{
+    font-size: 1.5rem;
+    color:white;
+}
+.radio, .checkbox{
+    display: inline-block;
+    margin-right:0.8rem;
+    min-width:1.2rem ;
+    min-height:1.2rem;
+}
+
+textarea.textarea{
+    width: 100%;
+    min-height: 150px;
+    resize: none;
+    border-radius: 5px;
+
+}
+.form-group.btn{
+    display: flex;
+    justify-content: center;
+}
+button.btn{
+    text-align: center;
+    background-color:rgba(250,180,3,1);
+    color: white;
+    font-size:inherit;
+    font-weight: 700;
+    border-radius: 5px ;
+    width: 120px;
+    height: 40px;
+    outline: 0;
+    cursor: pointer;
+    border:none;
+    margin:5px;
+}
+button.btn:hover{
+    background-color:rgba(4,60,227);
+    border:aliceblue;
+}
+
+/*medias*/
+
+@media screen and (max-width:768px){
+    body{
+        background:url(arepas.jpg);
+        background-size:cover;
+    }
+    .card{
+        margin:10% 10%;
+        border-radius:10px;
+        padding: 12px;
+    }
+    h1{
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    #description{
+        margin:0 auto;
+        font-size: 1.2rem;
+    }
+    label{
+        font-size:1.2rem;
+        margin-top:10px;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .radio, .checkbox{
+        min-width:1rem ;
+        min-height:1rem;
+    }
+    input, select, textarea{
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        padding: 5px;
+    }
+}
+@media screen and (max-width:576px){
+    h1{
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    #description{
+        margin:0 auto;
+        font-size: 1.2rem;
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .card{
+        margin:10% 5%;
+        border-radius:10px;
+        padding: 12px;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    #description{
+        font-size: 0.9rem;
+    }
+    label{
+        font-size:1rem;
+        margin-top:8px;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .radio, .checkbox{
+        min-width:0.8rem ;
+        min-height:0.8rem;
+    }
+    input, select, textarea{
+        padding: 3px;
+    }
+    .form-control{
+        height: 1.8rem;
+    }
+}
