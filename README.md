@@ -1,5 +1,4 @@
-# surveyFormFreeCodeCamp
+# Survey Form for FreeCodeCamp
 
-#Form about Venezuelan food.
-
-#freecodecamp project form
+-Form about Venezuelan food.
+-freecodecamp project form.
